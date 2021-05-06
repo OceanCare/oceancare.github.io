@@ -1,0 +1,111 @@
+---
+layout: default
+title: Ocean Care
+---
+<header>
+	<div class="container">
+		<div class="column">
+			<div>
+				<h1 class="editable">OCEAN CARE</h1>
+				<p class="editable">Crores of families in India are struggling with the pandemic. Help us in helping the people in need. </p>
+				<div class="button">
+					<a href="#donate">Know More</a>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<img src="{{ site.baseurl }}/images/covid.jpeg" alt="COVID">
+		</div>
+	</div>
+</header>
+
+<div class="container">
+	<h2 class="editable" style="text-align: center;">What do we help with?</h2>
+
+	<ul class="thirds">
+		<li>
+			<div class="image">{% include icons/site.html icon="population" %}</div>
+			<h3 class="editable">Porter Service</h3>
+			<p class="editable">COVID affected patients and families are struggling to get transfer of COVID needs.</p>
+			<p class="editable">Though amenties like food, medicines, hospitals and diagnostic centers are available, there is a scarcity of porter facility </p>
+		</li>
+		<li>
+			<div class="image">{% include icons/site.html icon="economy" %}</div>
+			<h3 class="editable">Plasma Donors</h3>
+			<p class="editable">COVID affacted patients and families are struggling to find Plasma Donors in the city.</p>
+			<p class="editable">Though there are a lot of entities working to help, there is always a need for more plasma donors.</p>
+		</li>
+
+		<li>
+			<div class="image">{% include icons/site.html icon="conditions" %}</div>
+			<h3 class="editable">COVID Care</h3>
+			<p class="editable">A dedicated COVID Customer Care to support patients and families 24x7.</p>
+			<p class="editable">With all the information available to the people, there are still a lot of questions that go unanswered</p>
+		</li>
+	</ul>
+</div>
+
+<div class="container">
+	<div class="columns">
+		<div>
+			<img src="{{ site.baseurl }}/images/mission.png" alt="Sheep">
+		</div>
+		<div>
+			<h2 class="editable">Our Mission</h2>
+
+			<p class="editable">We aim to provide support and care to COVID affected families/patients in India who are struggling to find resources, plasma donors, porters etc. for their COVID needs to help them get through these tough times</p>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<hr>
+	<blockquote>
+		<p class="quote editable">Indore's unsung COVID warriors ferrying patients to hospitals, labs for free</p>
+		<div class="attribute">
+			<p class="meta">
+				<span class="image"><img class="editable" src="{{ site.baseurl }}/images/toi.png" alt="TOI"></span>
+				<span class="author editable"><strong><a href="http://toi.in/x_okvZ49/a31gj" target="_blank">Indore News, Times of India</a></strong></span>
+			</p>
+		</div>
+	</blockquote>
+</div>
+
+<!-- <div class="darker">
+	<div class="container">
+		<h2 class="editable">Join us</h2>
+		<p class="editable" style="text-align: center;">Sign up to hear the latest news and progress in our fight for the sheep vote.</p>
+		<form action="{{ site.newsletter_action }}" method="post">
+			<input type="text" name="EMAIL" placeholder="Email">
+			<input type="submit" value="Sign up"/>
+		</form>
+	</div>
+</div> -->
+
+<!-- <div class="container" id="donate">
+	<h2 class="editable">Make a donation</h2>
+	<div class="donate">
+		{{ site.donation_embed }}
+	</div>
+</div> -->
+
+<div class="darker">
+	<div class="container">
+		<h2 class="editable">Updates</h2>
+		<p class="editor-link"><a href="cloudcannon:collections/_posts" class="btn"><strong>&#9998;</strong> Add Update</a></p>
+		<div class="posts">
+			{% for post in site.posts %}
+				<div class="post">
+					<div class="image" style="background-image: url({{ post.featured_image}})"></div>
+					<div class="post-content">
+						<p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
+						<h3>{{ post.title }}</h3>
+
+						{{ post.content }}
+						<p class="editor-link"><a href="cloudcannon:collections/{{ post.path }}" class="btn"><strong>&#9998;</strong> Edit Update</a></p>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
