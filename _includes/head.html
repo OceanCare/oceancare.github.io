@@ -1,0 +1,39 @@
+<head>
+
+  <title>
+    {% if page.title == "Home" %}
+      {{ site.title }} | {{ site.description }}
+    {% else %}
+      {{ page.title }} | {{ site.title }}
+    {% endif %}
+  </title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png" sizes="32x32">
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+  
+  <!-- Use Atom -->
+  <!-- RSS-v2.0
+  <link href="{{ site.github.url }}/rss-feed.xml" type="application/rss+xml" rel="alternate" title="{{ site.title }} | {{ site.description }}"/>
+  //-->
+
+
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+  <!-- Google Analytics -->
+  {% if site.google_analytics_key != '' %}
+    {% include google-analytics.html %}
+  {% endif %}
+
+  <!-- Use Jekyll SEO plugin -->
+  {% seo %}
+
+</head>
