@@ -1,18 +1,53 @@
-<header class="site-header">
-  <div style="background-color:green;">
-    <a href="{{ site.baseurl }}"><img src="{{ site.baseurl }}/images/logo.svg" /></a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" style="color:#20ca5a" href="/">Ocean Care</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" style="text-align: right;" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Our Services
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/pages/porter_services">Free Porter Services</a>
+          <a class="dropdown-item" href="/pages/plasma_donors">Plasma Donors</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a href="/pages/inspiration" class="nav-link">Our Inspiration</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Find Resources
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href={{ site.data.settings.porter_service_directory_link }} target="_blank">Find a Porter</a>
+          <a class="dropdown-item" href={{ site.data.settings.plasma_donor_directory_link }} target="_blank">Find Plasma Donors</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Register to Help
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href={{ site.data.settings.porter_service_link }} target="_blank">Register as a Porter</a>
+          <a class="dropdown-item" href={{ site.data.settings.plasma_donor_link }} target="_blank">Register as a Plasma Donor</a>
+        </div>
+      </li>
+
+        <li class="nav-item">
+          <a href="/pages/contribute" class="nav-link">Contribute</a>
+        </li>
+      
+      <li class="nav-item">
+        <a class="btn btn-primary" href={{ site.data.settings.donate_link }} target="_blank">Donate Now</a>
+      </li>
+    </ul>
   </div>
-  <nav class="menu-list">
-    {% for item in site.data.settings.menu %}
-      <a href="{{ site.baseurl }}/{{ item.folder }}/{{ item.file }}" class="menu-link">{{ item.name }}</a>
-    {% endfor %}
-  </nav>
-  <div class="dropdown">
-    <button class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
-    <div class="dropdown-content">
-      {% for item in site.data.settings.menu %}
-        <a href="{{ site.baseurl }}/{{ item.folder }}/{{ item.file }}" class="menu-link">{{ item.name }}</a>
-      {% endfor %}
-    </div>
-  </div>
-</header>
+</nav>
