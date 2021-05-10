@@ -1,9 +1,11 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" style="color:#20ca5a" href="/">Ocean Care</a>
+  
+  <a class="btn btn-primary" href={{ site.data.settings.donate_link }} target="_blank">Donate Now</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
+  
   <div class="collapse navbar-collapse" style="text-align: right;" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       
@@ -26,7 +28,7 @@
           Find Resources
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href={{ site.data.settings.porter_service_directory_link }} target="_blank">Find a Porter</a>
+          <a class="dropdown-item" href="/pages/porter_services" target="_blank">Find a Porter</a>
           <a class="dropdown-item" href={{ site.data.settings.plasma_donor_directory_link }} target="_blank">Find Plasma Donors</a>
         </div>
       </li>
@@ -45,9 +47,7 @@
           <a href="/pages/contribute" class="nav-link">Contribute</a>
         </li>
       
-      <li class="nav-item">
-        <a class="btn btn-primary" href={{ site.data.settings.donate_link }} target="_blank">Donate Now</a>
-      </li>
+      
     </ul>
   </div>
 </nav>
