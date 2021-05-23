@@ -1,17 +1,21 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" style="color:#20ca5a" href="/">Ocean Care</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+
   
-  <a class="btn btn-primary" href={{ site.data.settings.donate_link }} target="_blank">Donate Now</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+
+  <a class="navbar-brand" style="color:#20ca5a" href="/">
+    <img width="40" height="40" src="{{ site.baseurl }}/images/logo.png" alt="COVID">
+    </img>
+  </a>
   
-  <div class="collapse navbar-collapse" style="text-align: right;" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Our Services
+          Services
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="/pages/porter_services">Free Porter Services</a>
@@ -20,7 +24,7 @@
       </li>
 
       <li class="nav-item">
-        <a href="/pages/inspiration" class="nav-link">Our Inspiration</a>
+        <a href="/pages/inspiration" class="nav-link">Inspiration</a>
       </li>
 
       <li class="nav-item dropdown">
@@ -35,19 +39,27 @@
 
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Register to Help
+          Contribute
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href={{ site.data.settings.porter_service_link }} target="_blank">Register as a Porter</a>
-          <a class="dropdown-item" href={{ site.data.settings.plasma_donor_link }} target="_blank">Register as a Plasma Donor</a>
+          <a class="dropdown-item" href="/pages/contribute">Contribute to the Cause</a>
+          <a class="dropdown-item" href={{ site.data.settings.porter_service_link }} target="_blank">Contribute as a Porter</a>
+          <a class="dropdown-item" href={{ site.data.settings.plasma_donor_link }} target="_blank">Contribute as a Plasma Donor</a>
         </div>
       </li>
 
         <li class="nav-item">
-          <a href="/pages/contribute" class="nav-link">Contribute</a>
+          <a href="/pages/team" class="nav-link">Team</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="/pages/news_updates" class="nav-link">News & Updates</a>
         </li>
       
       
     </ul>
   </div>
+  <span>
+    <a class="btn btn-primary" href={{ site.data.settings.donate_link }} target="_blank">Donate Now</a>
+  </span>
 </nav>

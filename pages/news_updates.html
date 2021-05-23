@@ -1,0 +1,25 @@
+---
+layout: page
+title: News & Updates
+---
+
+<div class="container">
+  <h2 class="text-center">News & Updates</h2>
+  <div class="row equal">
+			{% for post in site.posts %}
+      <div class="col-md-6 col-xs-12 col-sm-6 d-flex mt-2">
+      <div class="card">
+        <img class="card-img-top" src="{{ post.featured_image}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{ post.title }}</h5>
+          <p class="card-text">{{ post.content }}</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">{{ post.date | date: '%B %d, %Y' }}</small>
+        </div>
+      </div>
+    </div>
+			{% endfor %}
+		</div>
+  </div>
+</div>

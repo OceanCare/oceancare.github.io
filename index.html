@@ -6,29 +6,66 @@ title: Ocean Care
 <div class="container">
 	<h2 class="editable" style="text-align: center;">What do we help with?</h2>
 
-	<ul class="thirds">
-		<li>
-			<div class="image">{% include icons/site.html icon="population" %}</div>
-			<h3 class="editable">Free Porter Service</h3>
-			<p class="editable">COVID affected patients and families are struggling to get transfer of COVID needs.</p>
-			<p class="editable">Though amenties like food, medicines, hospitals and diagnostic centers are available, there is a scarcity of porter facility </p>
-			<a class="btn btn-primary text-center" href="/pages/porter_services">Know More</a>
-		</li>
-		<li>
-			<div class="image">{% include icons/site.html icon="economy" %}</div>
-			<h3 class="editable">Plasma Donors</h3>
-			<p class="editable">COVID affacted patients and families are struggling to find Plasma Donors in the city.</p>
-			<p class="editable">Though there are a lot of entities working to help, there is always a need for more plasma donors.</p>
-			<a class="btn btn-primary text-center" href="/pages/plasma_donors">Know More</a>
-		</li>
-
-		<li>
-			<div class="image">{% include icons/site.html icon="conditions" %}</div>
-			<h3 class="editable">COVID Care</h3>
-			<p class="editable">A dedicated COVID Customer Care to support patients and families 24x7.</p>
-			<p class="editable">With all the information available to the people, there are still a lot of questions that go unanswered</p>
-		</li>
-	</ul>
+	<div id="carouselServices" class="carousel h-300" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carouselServices" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselServices" data-slide-to="1"></li>
+			<li data-target="#carouselServices" data-slide-to="2"></li>
+		  </ol>
+		<div class="carousel-inner">
+		  <div class="carousel-item active" style="background-color:#6f52f0;">
+			<div class="row">
+				<div class="col-4">
+					<img class="d-block" src="https://source.unsplash.com/MIYUJzpSsdg/300x300" alt="..." />
+				</div>
+				<div class="col-8">
+					<h3 class="editable" style="color : white;"><b>Free Porter Service</b></h3>
+					<p class="editable" style="color : white;">COVID affected patients and families are struggling to get transfer of COVID needs. Though amenties like food, medicines, hospitals and diagnostic centers are available, there is a scarcity of porter facility </p>
+					<div class="d-flex">
+						<a  class="btn btn-primary text-center mx-1" href="/pages/porter_services">Know More</a>
+						<a  class="btn btn-primary text-center mx-1" href={{ site.data.settings.donate_link }} target="_blank">Donate Now</a>
+					</div>
+				</div>
+			</div>
+		  </div>
+		  <div class="carousel-item" style="background-color:#6f52f0;">
+			<div class="row">
+				<div class="col-4">
+					<img class="d-block" src="https://source.unsplash.com/9k4Fglw6eFQ/300x300" alt="..." />
+				</div>
+				<div class="col-8">
+					<h3 class="editable" style="color : white;"><b>Oxygen Supply</b></h3>
+					<p class="editable" style="color : white;">COVID affacted patients and families are struggling to find oxygen supply in the city. Though there are a lot of entities working to help, there is always a need for more plasma donors.</p>
+					<div class="d-flex">
+					<a class="btn btn-primary text-center mx-1" href="/pages/plasma_donors">Know More</a>
+					<a class="btn btn-primary text-center mx-1" href={{ site.data.settings.donate_link }} target="_blank">Donate Now</a>
+					</div>
+				</div>
+			</div>
+		  </div>
+		  <div class="carousel-item" style="background-color:#6f52f0;">
+			<div class="row">
+				<div class="col-4">
+					<img class="d-block" src="https://source.unsplash.com/moHiHqdmUYY/300x300" alt="..." />
+				</div>
+				<div class="col-8">
+					<h3 class="editable" style="color : white;"><b>COVID Care</b></h3>
+					<p class="editable" style="color : white;">A dedicated COVID Customer Care to support patients and families 24x7. With all the information available to the people, there are still a lot of questions that go unanswered</p>
+					<div class="d-flex">
+						<a class="btn btn-primary text-center mx-1" href={{ site.data.settings.donate_link }} target="_blank">Donate Now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a class="carousel-control-prev" href="#carouselServices" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		  </a>
+		  <a class="carousel-control-next" href="#carouselServices" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		  </a>
+	  </div>
 </div>
 
 <header>

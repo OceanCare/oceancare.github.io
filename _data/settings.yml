@@ -11,6 +11,8 @@ menu:
 - {name: 'Free Porter Services', folder: 'pages', file: 'porter_services'}
 - {name: 'Plasma Donors Directory', folder: 'pages', file: 'plasma_donors'}
 - {name: 'Inspiration', folder: 'pages', file: 'inspiration'}
+- {name: 'Team', folder: 'pages', file: 'team'}
+- {name: 'News & Updates', folder: 'pages', file: 'news_updates'}
 
 # Customize site text
 pagination:
